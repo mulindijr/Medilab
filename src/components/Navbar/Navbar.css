@@ -40,3 +40,68 @@
     cursor: pointer;
     color: #535bf2;
 }
+
+.nav-bar{
+    background: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;     
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+nav h3 a{
+    font-size: 30px;
+    color: #2c4964;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    gap: 25px;
+}
+.navbar li{
+    font-size: 16px;
+    list-style: none;
+    padding-top: 10px;
+}
+.navbar li a {
+    color: #2c4964;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    color: #535bf2;
+    border-bottom: 2px solid #535bf2;
+    padding-bottom: 4px;
+}
+.navbar li a.active{
+    color: #535bf2;
+    border-bottom: 2px solid #535bf2;
+    padding-bottom: 4px;
+}
+.navbar button{
+    margin-left: 15px;
+    background: #1977cc;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.navbar a button{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar button a:hover{
+    background: #166ab5;
+    color: #fff;
+}  
