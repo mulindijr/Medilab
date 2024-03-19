@@ -2,6 +2,7 @@ import React from 'react'
 import { FaTwitter, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { TfiEmail } from "react-icons/tfi";
 import { BsPhone } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 function Navbar() {
@@ -30,6 +31,20 @@ function Navbar() {
             <FaLinkedin className='icon' />
           </a>
         </div>
+      </div>
+      <div className='nav-bar'>
+        <nav>
+          <h3><NavLink to="/">MEDILAB</NavLink></h3>
+          <ul className='navbar'>
+            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+            <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+            <li><NavLink to="/services" activeClassName="active">Services</NavLink></li>
+            <li><NavLink to="/departments" activeClassName="active">Departments</NavLink></li>
+            <li><NavLink to="/doctors" activeClassName="active">Doctors</NavLink></li>
+            <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+            <NavLink to="/appointment" activeClassName="active"><button>Make an Appointment</button></NavLink>
+          </ul>
+        </nav>
       </div>
     </>
   )
