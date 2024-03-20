@@ -18,16 +18,16 @@ function Navbar() {
           <p><BsPhone />+254713382707</p>
         </div>
         <div className='topbar-right'>
-          <a href="https://twitter.com/mulindijr" target='_blank'>
+          <a href="https://twitter.com/mulindijr" target='_blank' rel='noopener noreferrer'>
             <FaTwitter className='icon' />
           </a>
-          <a href="https://instagram.com/mulindijr" target='_blank'>
+          <a href="https://instagram.com/mulindijr" target='_blank' rel='noopener noreferrer'>
             <FaInstagram className='icon' />
           </a>
-          <a href="https://facebook.com" target='_blank'>
+          <a href="https://facebook.com" target='_blank' rel='noopener noreferrer'>
             <FaFacebook className='icon' />
           </a>
-          <a href="https://linkedin.com/in/mulindijr" target='_blank'>
+          <a href="https://linkedin.com/in/mulindijr" target='_blank' rel='noopener noreferrer'>
             <FaLinkedin className='icon' />
           </a>
         </div>
@@ -36,7 +36,7 @@ function Navbar() {
         <nav>
           <h3><NavLink to="/">MEDILAB</NavLink></h3>
           <ul className='navbar'>
-            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+          <li><NavLink exact='true' to="/" activeClassName="active">Home</NavLink></li>
             <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
             <li><NavLink to="/services" activeClassName="active">Services</NavLink></li>
             <li><NavLink to="/departments" activeClassName="active">Departments</NavLink></li>
