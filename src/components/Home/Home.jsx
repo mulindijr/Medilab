@@ -1,23 +1,23 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdHealthAndSafety } from "react-icons/md";
 import './Home.css'
 
 function Home() {
   return (
-    <>
+    <section id='/'>
       <div className='hero-bg'>
         <div className='hero-content'>
           <h1>WELCOME TO MEDILAB</h1>
           <p>Medilab: Where Compassionate Care Meets Cutting-Edge Medicine</p>
-          <NavLink to="/about"><button>Get Started</button></NavLink> 
+          <Link to="about" smooth={true} duration={500} spy={true}><button>Get Started</button></Link> 
         </div>
         <div className='hero-cards-container'>
           <div className='why-medilab'>
             <h1>Why Choose Medilab?</h1>
             <p>With a rich legacy of medical expertise spanning decades, we provide comprehensive, patient-centered care tailored to your individual needs. Our multidisciplinary team of dedicated healthcare professionals delivers compassionate support and cutting-edge treatments in our state-of-the-art facilities. We prioritize your well-being above all else, ensuring that you receive the highest quality care in a safe and comfortable environment.</p>
-            <NavLink to="/"><button>Learn More<MdKeyboardArrowRight className='arrow-right' /></button></NavLink>
+            <Link to="about" smooth={true} duration={500} spy={true}><button>Learn More<MdKeyboardArrowRight className='arrow-right' /></button></Link>
           </div>
           <div className='hero-cards'>
             <div className='hero-cards-icons'><MdHealthAndSafety /></div>
@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
