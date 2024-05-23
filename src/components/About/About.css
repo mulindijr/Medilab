@@ -1,0 +1,44 @@
+#about{
+    margin-top: 100px;
+    display: flex;
+}
+.about-left{
+    width: 50%;    
+}
+.about-left img{
+    width: 75%;
+    height: 90vh;
+}
+.about-right{
+    width: 50%;
+    margin-left: -150px;
+}
+.about-right h3{
+    margin-top: 50px;
+}
+.about-right p{
+    font-size: 16px;
+}
+.about-right h4{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.about-content{
+    display: flex;
+    gap: 20px;
+}
+.about-content .icon-box{ 
+    margin-top: 30px;
+    width: 32px;
+    height: 32px;
+    padding: 15px;
+    border: 2px solid #8dc2f1;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.about-content .icon-box .about-icon{
+    font-size: 32px;
+    color: #1977cc;
+    
+}
