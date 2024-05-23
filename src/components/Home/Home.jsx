@@ -6,14 +6,16 @@ import './Home.css'
 
 function Home() {
   return (
-    <section id='/'>
+    <section id='home'>
       <div className='hero-bg'>
         <div className='hero-content'>
           <h1>WELCOME TO MEDILAB</h1>
           <p>Medilab: Where Compassionate Care Meets Cutting-Edge Medicine</p>
           <Link to="about" smooth={true} duration={500} spy={true}><button>Get Started</button></Link> 
         </div>
-        <div className='hero-cards-container'>
+        
+      </div>
+      <div className='hero-cards-container'>
           <div className='why-medilab'>
             <h1>Why Choose Medilab?</h1>
             <p>With a rich legacy of medical expertise spanning decades, we provide comprehensive, patient-centered care tailored to your individual needs. Our multidisciplinary team of dedicated healthcare professionals delivers compassionate support and cutting-edge treatments in our state-of-the-art facilities. We prioritize your well-being above all else, ensuring that you receive the highest quality care in a safe and comfortable environment.</p>
@@ -35,7 +37,6 @@ function Home() {
             <p>Care Beyond Measure</p>
           </div>
         </div>
-      </div>
     </section>
   )
 }
