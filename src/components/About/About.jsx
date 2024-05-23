@@ -8,6 +8,9 @@ import './About.css'
 function About() {
   return (
     <section id='about'>
+      <div className='about-left'>
+          <img src={doctors} alt="doctors" />
+      </div>
       
     </section>    
   )
