@@ -39,9 +39,9 @@ function Navbar() {
       </div>
       <div className='nav-bar'>
       <nav>
-      <h3><Link to="/" smooth={true} duration={500}>MEDILAB</Link></h3>
+      <h3><Link to="home" smooth={true} duration={500}>MEDILAB</Link></h3>
       <ul className='navbar'>
-        <li><Link to="/" smooth={true} duration={500} spy={true} active={activeSection === "home"} onSetActive={handleSetActive}>Home</Link></li>
+        <li><Link to="home" smooth={true} duration={500} spy={true} active={activeSection === "home"} onSetActive={handleSetActive}>Home</Link></li>
         <li><Link to="about" smooth={true} duration={500} spy={true} active={activeSection === "about"} onSetActive={handleSetActive}>About</Link></li>
         <li><Link to="services" smooth={true} duration={500} spy={true} active={activeSection === "services"} onSetActive={handleSetActive}>Services</Link></li>
         <li><Link to="departments" smooth={true} duration={500} spy={true} active={activeSection === "departments"} onSetActive={handleSetActive}>Departments</Link></li>
