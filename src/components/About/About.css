@@ -42,3 +42,9 @@
     color: #1977cc;
     
 }
+.about-content:hover .icon-box{
+    background-color: #1977cc;
+}
+.about-content:hover .icon-box .about-icon{
+    color: #fff;
+}
