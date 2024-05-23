@@ -37,12 +37,11 @@
 
 .hero-cards-container{
     display: flex;
-    margin: 20px 150px;
+    margin: -260px 150px 0 150px;
     font-family: "Open Sans", sans-serif;
     gap: 40px;
 }
 .why-medilab{
-    margin-top: 50px;
     width: 30%;
     height: auto;
     background: #1977cc;
