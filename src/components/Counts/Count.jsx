@@ -6,7 +6,10 @@ import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 
 function Count() {
-  
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger only once
+    threshold: 0.5 // Trigger when 50% of the component is visible
+  });
 
   return (
     <div className='count' ref={ref}>
