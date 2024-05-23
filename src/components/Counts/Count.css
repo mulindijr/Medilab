@@ -1,0 +1,41 @@
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #f1f7fd;
+    padding: 70px;
+}
+.count-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    background: #fff;
+}
+.count-icon-box{
+    margin-top: -30px;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    background: #1977cc;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.count-icon{
+    font-size: 25px;
+    background: #1977cc;
+    color: #fff;
+    border-radius: 50%;
+}
+.count-number{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #333;
+}
+.count p{
+    font-size: 19px;
+    margin-top: 8px;
+    
+}
