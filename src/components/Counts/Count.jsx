@@ -13,7 +13,34 @@ function Count() {
 
   return (
     <div className='count' ref={ref}>
-           
+      <div className='count-card'>
+        <div className='count-icon-box'>
+        <FaUserDoctor className='count-icon'/>
+        </div>
+        {inView && <CountUp end={85} duration={2} className='count-number' />}
+        <p>Doctors</p>
+      </div>        
+      <div className='count-card'>
+        <div className='count-icon-box'>
+          <FaRegHospital className='count-icon'/>
+        </div>        
+        {inView && <CountUp end={18} duration={2} className='count-number' />}
+        <p>Departments</p>
+      </div>        
+      <div className='count-card'>
+        <div className='count-icon-box'>
+          <FaFlask className='count-icon'/>
+        </div>
+        {inView && <CountUp end={12} duration={2} className='count-number' />}
+        <p>Research Labs</p>
+      </div>        
+      <div className='count-card'>
+        <div className='count-icon-box'>
+          <FaAward className='count-icon'/>
+        </div>
+        {inView && <CountUp end={150} duration={2} className='count-number' />}
+        <p>Awards</p>
+      </div>        
     </div>
   );
 }
