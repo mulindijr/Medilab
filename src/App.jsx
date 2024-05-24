@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
-import Count from './components/Counts/Count'
+import Services from './components/Services/Services'
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <Count />
+        <Services />
         
       </BrowserRouter>
       
