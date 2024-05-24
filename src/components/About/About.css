@@ -1,6 +1,10 @@
 #about{
     margin-top: 100px;
     display: flex;
+    flex-direction: column;
+}
+.about-body{
+    display: flex;
 }
 .about-left{
     width: 50%;    
