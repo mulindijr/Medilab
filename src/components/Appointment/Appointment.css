@@ -1,0 +1,44 @@
+#appointment{
+  background-color: #f1f7fd;
+}
+.appointment{
+  margin: 30px 150px 0 150px;
+}
+#appointment h1{
+  padding-top: 20px;
+  text-align: center;
+}
+#appointment p{
+  text-align: center;
+  font-size: 19px;
+}
+.form-flex{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.form-group input{
+  width: 300px;
+  padding: 10px;
+  outline: none;
+}
+.form-group select{
+  width: 325px;
+  padding: 11px;
+
+}
+.form-group textarea{
+  width: 98%;
+  height: 100px;
+}
+.appointment-form button{
+  margin: 10px 0 50px 350px;
+  background: #1977cc;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  font-size: 16px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
