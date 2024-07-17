@@ -5,7 +5,10 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Services from './components/Services/Services'
 import Appointment from './components/Appointment/Appointment'
-
+import Departments from './components/Departments/Departments'
+import Doctors from './components/Doctors/Doctors'
+import Faq from './components/Faq/Faq'
+import Contact from './components/Contact/Contact'
 function App() {
   
   return (
@@ -16,7 +19,10 @@ function App() {
         <About />
         <Services />
         <Appointment />
-        
+        <Departments />    
+        <Doctors />   
+        <Faq />
+        <Contact />
       </BrowserRouter>
       
     </>
