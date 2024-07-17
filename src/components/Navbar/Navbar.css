@@ -41,12 +41,13 @@
     color: #535bf2;
 }
 
-.nav-bar{
+.nav-bar {
     background: #fff;
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;     
+    z-index: 1;
+    box-shadow: 0 5px 5px #ccc;
 }
 nav{
     display: flex;
