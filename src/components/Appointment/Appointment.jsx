@@ -89,9 +89,11 @@ function Appointment() {
                 required
               >
                 <option value="">Select Department</option>
-                <option value="1">Department 1</option>
-                <option value="2">Department 2</option>
-                <option value="3">Department 3</option>
+                <option value="1">Cardiology</option>
+                <option value="2">Neurology</option>
+                <option value="3">Hepatology</option>
+                <option value="4">Pediatrics</option>
+                <option value="5">Eye Care</option>
               </select>
             </div>
             <div className="form-group">
