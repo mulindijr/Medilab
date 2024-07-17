@@ -38,18 +38,18 @@ function Navbar() {
         </div>
       </div>
       <div className='nav-bar'>
-      <nav>
-      <h3><Link to="home" smooth={true} duration={500}>MEDILAB</Link></h3>
-      <ul className='navbar'>
-        <li><Link to="home" smooth={true} duration={500} spy={true} active={activeSection === "home"} onSetActive={handleSetActive}>Home</Link></li>
-        <li><Link to="about" smooth={true} duration={500} spy={true} active={activeSection === "about"} onSetActive={handleSetActive}>About</Link></li>
-        <li><Link to="services" smooth={true} duration={500} spy={true} active={activeSection === "services"} onSetActive={handleSetActive}>Services</Link></li>
-        <li><Link to="departments" smooth={true} duration={500} spy={true} active={activeSection === "departments"} onSetActive={handleSetActive}>Departments</Link></li>
-        <li><Link to="doctors" smooth={true} duration={500} spy={true} active={activeSection === "doctors"} onSetActive={handleSetActive}>Doctors</Link></li>
-        <li><Link to="contact" smooth={true} duration={500} spy={true} active={activeSection === "contact"} onSetActive={handleSetActive}>Contact</Link></li>
-        <Link to="appointment" smooth={true} duration={500} spy={true}><button>Make an Appointment</button></Link>
-      </ul>
-    </nav>
+        <nav>
+          <h3><Link to="home" smooth={true} duration={500}>MEDILAB</Link></h3>
+          <ul className='navbar'>
+            <li><Link to="home" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "home"} onSetActive={handleSetActive}>Home</Link></li>
+            <li><Link to="about" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "about"} onSetActive={handleSetActive}>About</Link></li>
+            <li><Link to="services" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "services"} onSetActive={handleSetActive}>Services</Link></li>
+            <li><Link to="departments" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "departments"} onSetActive={handleSetActive}>Departments</Link></li>
+            <li><Link to="doctors" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "doctors"} onSetActive={handleSetActive}>Doctors</Link></li>
+            <li><Link to="contact" smooth={true} duration={500} spy={true} offset={-70} active={activeSection === "contact"} onSetActive={handleSetActive}>Contact</Link></li>
+            <Link to="appointment" smooth={true} duration={500} spy={true}offset={-70} ><button>Make an Appointment</button></Link>
+          </ul>
+        </nav>
       </div>
     </>
   );
