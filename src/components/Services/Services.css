@@ -6,7 +6,7 @@
 }
 #services p{
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
 }
 .service-card-section{
     display: flex;
@@ -44,7 +44,7 @@
 }
 .service-card p{
     margin-top: 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 .service-card:hover{
     background-color: #1977cc;
