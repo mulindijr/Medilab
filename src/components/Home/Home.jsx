@@ -11,7 +11,7 @@ function Home() {
         <div className='hero-content'>
           <h1>WELCOME TO MEDILAB</h1>
           <p>Medilab: Where Compassionate Care Meets Cutting-Edge Medicine</p>
-          <Link to="about" smooth={true} duration={500} spy={true}><button>Get Started</button></Link> 
+          <Link to="about" smooth={true} duration={500} spy={true} offset={-90}><button>Get Started</button></Link> 
         </div>
         
       </div>
