@@ -9,6 +9,10 @@ const Lightbox = ({ images, selectedImage, onClose }) => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   }, [images.length]);
 
+  const handleNext = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, [images.length]);
+
   return (
     <div className='lightbox'>
       <div className='lightbox-content'>
