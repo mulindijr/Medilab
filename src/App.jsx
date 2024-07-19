@@ -8,6 +8,7 @@ import Appointment from './components/Appointment/Appointment'
 import Departments from './components/Departments/Departments'
 import Doctors from './components/Doctors/Doctors'
 import Faq from './components/Faq/Faq'
+import Gallery from './components/Gallery/Gallery'
 import Contact from './components/Contact/Contact'
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Departments />    
         <Doctors />   
         <Faq />
+        <Gallery />
         <Contact />
       </BrowserRouter>
       
