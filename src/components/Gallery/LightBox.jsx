@@ -5,6 +5,10 @@ import './LightBox.css';
 const Lightbox = ({ images, selectedImage, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(selectedImage);
 
+  const handlePrev = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  }, [images.length]);
+
   return (
     <div className='lightbox'>
       <div className='lightbox-content'>
