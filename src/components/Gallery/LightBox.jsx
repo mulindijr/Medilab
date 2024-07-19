@@ -13,6 +13,10 @@ const Lightbox = ({ images, selectedImage, onClose }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images.length]);
 
+  useEffect(() => {
+    setCurrentIndex(selectedImage);
+  }, [selectedImage]);
+  
   return (
     <div className='lightbox'>
       <div className='lightbox-content'>
