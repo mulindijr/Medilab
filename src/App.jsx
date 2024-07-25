@@ -10,6 +10,8 @@ import Doctors from './components/Doctors/Doctors'
 import Faq from './components/Faq/Faq'
 import Gallery from './components/Gallery/Gallery'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import BackToTop from './components/BackToTop/BackToTop';
 function App() {
   
   return (
@@ -25,6 +27,8 @@ function App() {
         <Faq />
         <Gallery />
         <Contact />
+        <Footer />
+        <BackToTop />
       </BrowserRouter>
       
     </>
