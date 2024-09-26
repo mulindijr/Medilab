@@ -86,24 +86,13 @@ nav h3 a{
     border-bottom: 2px solid #535bf2;
     padding-bottom: 4px;
 }
-.navbar button{
-    margin-left: 15px;
+.appointment-btn {
     background: #1977cc;
+    color: #fff;
     border-radius: 50px;
     padding: 8px 25px;
-    white-space: nowrap;
-    transition: 0.3s;
     font-size: 16px;
-    display: inline-block;
     height: 40px;
     border: none;
     cursor: pointer;
 }
-.navbar a button{
-    color: #fff;
-    text-decoration: none;
-}
-.navbar button a:hover{
-    background: #166ab5;
-    color: #fff;
-}  
