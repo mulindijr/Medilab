@@ -47,8 +47,8 @@ function Navbar() {
             <li><Link to="departments" smooth={true} duration={1500} spy={true} offset={-70}  onSetActive={handleSetActive}>Departments</Link></li>
             <li><Link to="doctors" smooth={true} duration={1500} spy={true} offset={-90}  onSetActive={handleSetActive}>Doctors</Link></li>
             <li><Link to="contact" smooth={true} duration={1500} spy={true} offset={-90}  onSetActive={handleSetActive}>Contact</Link></li>
-            <Link to="appointment" smooth={true} duration={1500} spy={true}offset={-70} ><button>Make an Appointment</button></Link>
           </ul>
+          <Link to="appointment" smooth={true} duration={1500} spy={true}offset={-70} ><button className='appointment-btn'>Make an Appointment</button></Link>
         </nav>
       </div>
     </>
