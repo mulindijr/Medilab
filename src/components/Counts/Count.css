@@ -40,3 +40,16 @@
     margin-top: 8px;
     
 }
+
+@media (max-width: 768px){
+    .count{
+        flex-direction: column;       
+        gap: 50px;
+    }
+    .count-card{
+        width: 370px;
+    }
+    .count-number{
+        font-size: 30px;
+    }
+}
