@@ -30,6 +30,7 @@
 .form-group textarea{
   width: 98%;
   height: 100px;
+  resize: vertical;
 }
 .appointment-form button{
   margin: 10px 0 50px 350px;
@@ -41,4 +42,24 @@
   height: 40px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .appointment{
+    margin: 0 20px;
+  }
+  .form-flex{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .form-group textarea{
+    width: 380px;
+    resize: vertical;
+    height: 100px;
+    outline: #f1f7fd;
+  }
+  .appointment-form button{
+    margin: 10px 80px;
+  }
 }
