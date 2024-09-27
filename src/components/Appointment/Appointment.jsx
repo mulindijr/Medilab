@@ -29,7 +29,7 @@ function Appointment() {
     <section id='appointment'>
       <div className='appointment'>
         <h1>Make an Appointment</h1>
-        <p>At Medilab, your health and convenience are our top priorities. Scheduling an appointment with our expert healthcare providers is simple and hassle-free.Contact us today to book your appointment and experience the exceptional care and attention that Medilab is known for.</p>
+        <p>Your health and convenience are our top priorities. Scheduling an appointment with our expert healthcare providers is simple and hassle-free.Contact us today to book your appointment and experience the exceptional care and attention that Medilab is known for.</p>
     
         <form className="appointment-form" onSubmit={handleSubmit}>
           <div className='form-flex'>
