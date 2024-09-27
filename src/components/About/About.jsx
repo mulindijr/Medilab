@@ -9,12 +9,12 @@ import './About.css'
 function About() {
   return (
     <section id='about'>
+      <h3>About Medilab</h3>
       <div className='about-body'>
         <div className='about-left'>
             <img src={doctors} alt="doctors" />
         </div>
         <div className='about-right'>
-          <h3>About Medilab</h3>
           <p>At Medilab, we are committed to providing exceptional healthcare services tailored to meet the diverse needs of our patients. With a legacy of excellence spanning decades, we have established ourselves as a trusted name in the healthcare industry.</p>
           <div className='about-content'>
             <div className='icon-box'>
