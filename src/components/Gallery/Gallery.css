@@ -1,12 +1,11 @@
-#gallery {
-  padding: 50px 0;
+#gallery h1{
   text-align: center;
 }
 
 .gallery-p {
-  margin: 20px 0;
-  font-size: 1.2em;
-  margin: 30px 150px 30px 150px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 150px 20px;
 }
 
 .gallery-container {
@@ -31,10 +30,37 @@
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
-
   
 .gallery-image:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+@media ( max-width: 768px){
+  .gallery-p {
+    margin: 0 20px 10px;
+  }
   
+  .gallery-container {
+    margin: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .gallery-image-container{
+    width: 100%;
+  }
+  
+  .gallery-image {
+    width: 100%; 
+    height: auto;
+    transition: none;
+  }
+
+  .gallery-image:hover {
+    cursor: pointer;
+    transform: none;
+  }
+}
