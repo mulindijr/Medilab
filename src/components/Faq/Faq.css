@@ -50,3 +50,14 @@
 .faq-answer.active {
   max-height: 100px;
 }
+
+@media (max-width: 768px){
+  .faq-container {
+    margin: 0 10px;
+  }
+  
+  .faq-item {
+    width: 100%;
+    padding: 10px;
+  }  
+}
