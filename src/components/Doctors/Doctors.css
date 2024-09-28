@@ -74,3 +74,25 @@
     background: #1977cc;
 }
 
+@media (max-width: 768px){
+    #doctors{
+        margin: 0 20px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .doctors-card{
+        width: 100%;
+        gap: 10px;
+        padding: 5px;
+    }
+    .doctors-card:hover img {
+        transform: none; 
+    }
+    .social-icon{
+        background: #1977cc;
+    }
+    .social-icon:hover{
+        background: inherit;
+    }
+}
