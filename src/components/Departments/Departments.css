@@ -60,4 +60,45 @@
   width: 350px;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  #departments {
+    margin: 0 1px;
+    height: auto;
+  }
   
+  .departments-container {    
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .departments-list {    
+    width: 100%;
+    border-right: none;
+  }
+
+  .departments-list li {
+    margin-bottom: 10px;
+  }
+
+  .departments-list li.active {
+    background-color: #1977cc;
+    color: #fff;
+  }
+  
+  .department-details {
+    flex-direction: column-reverse;
+  }
+
+  .department{
+    margin-left: 1px;
+  }
+  
+  .department p{
+    text-align: flex-start;
+  }
+  .department-img img {
+    width: 100%;
+  }
+  
+}  
