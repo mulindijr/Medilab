@@ -116,3 +116,36 @@
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 768px) {    
+    #contact p {
+        margin: 0 20px 10px 20px;
+    }
+    
+    .contact-details{
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 20px;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .contact-form {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .contact-form textarea {
+        width: 97%;
+        height: 70px;
+        border: 2px solid #ccc; 
+    }
+    
+    .contact-form button{
+        margin: 10px 0 0 120px;
+    }    
+}
