@@ -25,33 +25,34 @@ const Footer = () => {
                             <p><span style={{fontWeight:"600"}}>Email:</span>contact@medilab.com</p>
                         </div>
                     </div>
+                    <div className='links-newsletter'>
+                        <div>
+                            <h2>Useful links</h2>
+                            <ul className='footer-links'>
+                                <li><Link to="home" smooth={true} duration={1500} spy={true}><FaAngleRight /> Home</Link></li>
+                                <li><Link to="about" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> About</Link></li>
+                                <li><Link to="services" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Services</Link></li>
+                                <li><Link to="departments" smooth={true} duration={1500} spy={true} offset={-70}><FaAngleRight /> Departments</Link></li>
+                                <li><Link to="doctors" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Doctors</Link></li>
+                                <li><Link to="contact" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Contact</Link></li>
+                            </ul>
+                        </div>
 
-                    <div>
-                        <h2>Useful links</h2>
-                        <ul className='footer-links'>
-                            <li><Link to="home" smooth={true} duration={1500} spy={true}><FaAngleRight /> Home</Link></li>
-                            <li><Link to="about" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> About</Link></li>
-                            <li><Link to="services" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Services</Link></li>
-                            <li><Link to="departments" smooth={true} duration={1500} spy={true} offset={-70}><FaAngleRight /> Departments</Link></li>
-                            <li><Link to="doctors" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Doctors</Link></li>
-                            <li><Link to="contact" smooth={true} duration={1500} spy={true} offset={-90}><FaAngleRight /> Contact</Link></li>
-                        </ul>
+                        <div className='newsletter'>
+                            <h2>Join Our Newsletter</h2>
+                            <p>Stay updated with our latest news, special offers, and exclusive content by joining our newsletter. Sign up now</p>
+                            <form className='newsletter-form' method="post">
+                                <input type="email" name="email" placeholder="Enter your email" required />
+                                <input type="submit" value="Subscribe"/>
+                            </form>
+                        </div> 
                     </div>
-
-                    <div className='newsletter'>
-                        <h2>Join Our Newsletter</h2>
-                        <p>Stay updated with our latest news, special offers, and exclusive content by joining our newsletter. Sign up now</p>
-                        <form className='newsletter-form' method="post">
-                            <input style={{width: "50%"}} type="email" name="email" placeholder="Enter your email" required />
-                            <input type="submit" value="Subscribe" className='input-btn'/>
-                        </form>
-                    </div> 
                 </div>     
             </div>
 
             <div className='copyright-bg'>
                 <div className='copyright-content'>
-                    <div>
+                    <div className='rights-reserved'>
                         <p>© Copyright Medilab. All Rights Reserved</p>
                         <p>Designed & Created by <a href="https://linkedin.com/in/mulindijr" target="_blank">Mulindi Jr</a></p>
                     </div>
