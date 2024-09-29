@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div style={{marginTop:"5q0px"}}>
+                    <div>
                         <h2>Useful links</h2>
                         <ul className='footer-links'>
                             <li><Link to="home" smooth={true} duration={1500} spy={true}><FaAngleRight /> Home</Link></li>
@@ -49,8 +49,8 @@ const Footer = () => {
                 </div>     
             </div>
 
-            <div className='copyright'>
-                <div style={{display:"flex", justifyContent:"center",alignItems:"center", gap:"35rem", margin: "10px 150px 0 150px", paddingTop:"15px"}}>
+            <div className='copyright-bg'>
+                <div className='copyright-content'>
                     <div>
                         <p>© Copyright Medilab. All Rights Reserved</p>
                         <p>Designed & Created by <a href="https://linkedin.com/in/mulindijr" target="_blank">Mulindi Jr</a></p>
