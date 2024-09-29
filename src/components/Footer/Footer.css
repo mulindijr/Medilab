@@ -1,14 +1,10 @@
 .footer{
-    margin: 30px 150px 0 150px;
+    margin: 0 150px;
 }
+
 .footer-flex{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-.footer-flex h2{
-    font-size: 14px;
+    margin-top: 50px;
 }
 
 .footer-links{
@@ -41,9 +37,15 @@
     cursor: pointer;
 }
 
-.copyright{
+.copyright-bg{
     background: #f1f7fd;
+}
+
+.copyright-content{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
 }
 
 .footer-social-icons{
