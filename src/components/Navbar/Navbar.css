@@ -1,4 +1,4 @@
-.topbar{
+.topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,35 +8,41 @@
     font-size: 14px;
     transition: all 0.5s;
 }
-.topbar-left{
+
+.topbar-left {
     display: flex;
     gap: 20px;
 }
-.topbar-left p{
+
+.topbar-left p {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
     color: #437099;
     font-weight: 600;
-    cursor: pointer
+    cursor: pointer;
 }
-.topbar-left p a{
+
+.topbar-left p a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #437099;
     font-weight: 600;
 }
-.topbar-right{
+
+.topbar-right {
     display: flex;
     align-items: center;
     gap: 10px;    
 }
-.topbar-right .icon{
+
+.topbar-right .icon {
     color: #437099;
 }
-.topbar-right .icon:hover{
+
+.topbar-right .icon:hover {
     cursor: pointer;
     color: #535bf2;
 }
@@ -46,46 +52,54 @@
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10; /* Increase z-index to keep it on top */
     box-shadow: 0 5px 5px #ccc;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 150px;
 }
-nav h3 a{
+
+nav h3 a {
     font-size: 30px;
     color: #2c4964;
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     display: flex;
     gap: 25px;
 }
-.navbar li{
+
+.navbar li {
     list-style: none;
     padding-top: 10px;
 }
+
 .navbar li a {
     color: #2c4964;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
     color: #535bf2;
     border-bottom: 2px solid #535bf2;
     padding-bottom: 4px;
 }
-.navbar li a.active{
+
+.navbar li a.active {
     color: #535bf2;
     border-bottom: 2px solid #535bf2;
     padding-bottom: 4px;
 }
+
 .appointment-btn {
     background: #1977cc;
     color: #fff;
@@ -95,4 +109,67 @@ nav h3 a{
     height: 40px;
     border: none;
     cursor: pointer;
+}
+
+.mobile-menu-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-icon {
+    display: none;
+    color: #2c4964;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        margin: 0 20px;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .topbar-right {
+        display: none;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    nav {
+        margin: 0 20px;
+    }
+
+    nav h3 a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-open {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        top: 45px;  /* Corrected positioning to appear just below the navbar */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9; /* Ensure it appears on top of other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow for better visibility */
+    }
+
+    .navbar-open li {
+        padding: 10px 20px;  /* Add padding for better mobile spacing */
+    }
+
+    .navbar-open li a {
+        font-size: 18px;  /* Increase font size for easier tapping on mobile */
+    }
 }
